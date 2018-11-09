@@ -1,0 +1,41 @@
+<section class="image-bg">
+	<h1>Prodavnica</h1>
+	<p>Početna / Prodavnica</p>
+</section>
+
+<section class="shop-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-4" *ngFor="let product of products;">
+				<div class="product-div" [routerLink]="['/shop/product/', product.id]">
+					<div class="image" [ngStyle]="{'background-image': 'url(' + product.imgUrl + ')'}">
+						<button class="add-btn">
+							<span>POGLEDAJ PROIZVOD</span>
+						</button>
+					</div>
+
+					<div class="text">
+						<p class="price">&euro; {{product.price}}</p>
+						<h3 class="name">{{product.name}}</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<div class="product-nav-div">
+					<div class="prev">
+						<
+					</div>
+
+					<div class="pages">1 of 5</div>
+
+					<div class="next">
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

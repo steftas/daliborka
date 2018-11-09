@@ -1,0 +1,117 @@
+<div class="footer-info-div">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-4">
+				<div class="about-div">
+					<h2 class="title">O nama</h2>
+					<!-- <p class="sub-title">Choice</p> -->
+
+					<div class="text">
+						FOHOW je velika međunarodna Naučno-tehnička i investiciona holding Korporacija sa sedištem u Hong Kongu.<br>
+
+						Njen osnivač je gospodin Jui Fei. Osnovni cilj Korporacije FOHOW je  da stvori najuspešniju kompaniju za proizvodnju prirodnih preparata, da utemelji plasman u Kini i da se uspešno plasirala na svetskom tržištu.
+					</div>
+
+					<div class="contact-div">
+						<div>
+							<b>Adresa:</b>
+							2/45 Tower Street, New York
+						</div>
+
+						<div>
+							<b>Telefon:</b>
+							012345-6789-011
+						</div>
+					</div>
+
+					<div class="social-div">
+						<ul>
+							<li>
+								<a href="https://facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-sm-4">
+				<div class="post-div">
+					<h2 class="title">Post</h2>
+					<!-- <p class="sub-title">Choice of ...</p> -->
+
+					<div class="posts-div">
+						<div class="single-post">
+							<div class="post-header">
+								JOHN DOE
+								<span>20 min</span>
+							</div>
+
+							<div class="post-text">
+								Duis at nisl quis quam condimentum pulvinar Quisque euismod convallis eros quis lacinia enim rhoncus  
+							</div>
+
+							<a href="https://t.co/2fi1dWRGYF #WordPress" target="_blank">https://t.co/2fi1dWRGYF #WordPress</a>
+						</div>
+
+						<div class="single-post">
+							<div class="post-header">
+								ALEX DOE
+								<span>45 min</span>
+							</div>
+
+							<div class="post-text">
+								Duis at nisl quis quam condimentum pulvinar Quisque euismod convallis eros quis lacinia enim rhoncus  
+							</div>
+
+							<a href="https://t.co/2fi1dWRGYF #WordPress" target="_blank">https://t.co/2fi1dWRGYF #WordPress</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-sm-4">
+				<div class="product-div">
+					<h2 class="title">Proizvodi</h2>
+					<!-- <p class="sub-title">Choice of ...</p> -->
+
+					<div class="products-div">
+						<div class="single-product" *ngFor="let product of products; let i = index;">
+							<a href="">
+								<div class="row">
+									<div class="col-3 text-center">
+										<img [src]="product['imgUrl']" />
+									</div>
+
+									<div class="col-9">
+										<div class="product-price">
+											&euro; {{product['price']}}
+										</div>
+
+										<div class="product-title">
+											{{product['name']}}
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="footer-text">
+					<b>SITENAME</b> - Copyright 2018, Build by steftas
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

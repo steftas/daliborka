@@ -1,0 +1,65 @@
+<section class="image-bg">
+	<h1>Korpa</h1>
+	<p>Početna / Prodavnica / Korpa</p>
+</section>
+
+<section class="cart-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<table>
+					<thead>
+						<tr>
+							<th>PROIZVODI</th>
+							<th>CENA</th>
+							<th>KOLIČINA</th>
+							<th>UKUPNA CENA</th>
+							<th></th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr *ngFor="let cartItem of globalStore['cart']['items'];">
+							<td>
+								<img [src]="cartItem.product.imgUrl">
+								<h3>{{cartItem.product.name}}</h3>
+							</td>
+
+							<td>&euro; {{cartItem.product.price}}</td>
+
+							<td>
+								<div class="product-quantity-div">
+									<button class="minus-btn" type="button" >-</button>
+
+									<input class="text-center" type="tel" [value]="cartItem.quantity" />
+
+			                        <button class="plus-btn" type="button">+</button>
+			                    </div>
+							</td>
+
+							<td>&euro; {{cartItem.quantity * cartItem.product.price}}</td>
+
+							<td>
+								<button type="button" class="btn btn-danger" (click)="removeItem(cartItem)">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</button>
+							</td>
+						</tr>
+					</tbody>
+
+					<tfoot>
+						<tr>
+							<td colspan="2">
+								Isporuka: Besplatna   -  <span>Ukupno: &euro; {{globalStore['cart']['totalPrice']}}</span>
+							</td>
+
+							<td colspan="3" class="text-right">
+								<button class="add-btn" routerLink="/shop/checkout">NASTAVI KA KASI</button>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>

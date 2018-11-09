@@ -1,0 +1,167 @@
+.image-bg {
+	padding: 150px 0;
+	position: relative;
+	text-align: center;
+	background: #ccc;
+	background-image: url('/assets/images/backgrounds/about.jpg');
+	background-position: center;
+	background-size: cover;
+	color: #000;
+
+	p {
+		font-family: 'Courgette', cursive;
+	}
+}
+
+.about-section {
+	padding: 75px 0;
+
+	.about-title {
+		font-size: 42px;
+		font-family: 'Courgette', cursive;
+		margin: 0 0 10px;
+
+		span {
+			color: #9fcb32;
+		}
+	}
+
+	.about-subtitle {
+		margin: 0;
+		font-size: 16px;
+	}
+
+	.about-text {
+		margin: 30px 0 0;
+	}
+
+	.about-icons-div {
+		margin: 15px 0;
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		i {
+			font-size: 75px;
+			color: #9fcb32;
+		}
+
+		h2 {
+			font-size: 18px;
+    		margin: 0 0 10px;
+    		font-weight: 600;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+}
+
+.services-section {
+	.services-text-div {
+		background: #eee;
+		padding: 75px 0;
+
+		.text {
+			text-align: justify;
+			line-height: 2;
+		}
+	}
+}
+
+.certificates-section {
+	padding: 0 0 50px;
+
+	.certificates-div {
+		.col {
+			padding: 0;
+
+			&:nth-child(even) {
+				.image {
+					background-color: #999;
+
+					&:before {
+						background-color: rgba(0, 0, 0, 0.75);
+					}
+				}
+			}
+		}
+
+		.certificate-div {
+			position: relative;
+			cursor: pointer;
+
+			.image {
+				background-color: #333;
+				min-height: 400px;
+				padding: 15px;
+				position: relative;
+				background-image: url('/assets/images/certificate/rus1.jpg');
+				background-position: center;
+				background-size: cover;
+
+				h3 {
+					color: #fff;
+					font-size: 18px;
+					font-weight: 600;
+					position: absolute;
+					bottom: 50px;
+				}
+
+				&:before {
+					position: absolute;
+					content: "";
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-color: rgba(51, 51, 51, 0.75);
+				}
+			}
+
+			.icon {
+				position: absolute;
+			    bottom: -40px;
+			    left: 15px;
+			    border: 1px solid #fff;
+			    border-radius: 100%;
+			    background: #fff;
+			    padding: 0 5px;
+
+				i {
+					font-size: 75px;
+					color: #9fcb32;
+				}
+			}
+		}
+		}
+}
+
+.section-header {
+	padding: 50px 15px;
+	text-align: center;
+
+	img {
+		width: 100%;
+		max-width: 60px;
+	}
+}
+
+.gallery-div {
+	button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: transparent;
+		outline: 0;
+		border: 0;
+		cursor: pointer;
+    	font-size: 22px;
+	}
+}

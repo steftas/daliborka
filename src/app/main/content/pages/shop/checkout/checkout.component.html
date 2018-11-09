@@ -1,0 +1,102 @@
+<section class="image-bg">
+	<h1>Kasa</h1>
+	<p>Početna / Prodavnica / Kasa</p>
+</section>
+
+<section class="checkout-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-8">
+				<div class="form-title">
+					<h1>Informatacije</h1>
+					<p>100% Zdravo</p>
+				</div>
+
+				<div class="form-wrapper">
+					<form name="orderForm" (submit)='sendMessage(orderForm)' id="ngForm">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Vaše ime" formcontrolname='fullName'>
+						</div>
+
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Email" formcontrolname='email'>
+						</div>
+
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Broj telefona" formcontrolname='phone'>
+						</div>
+
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Adresa" formcontrolname='address'>
+						</div>
+
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Grad" formcontrolname='city'>
+						</div>
+
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Zip" formcontrolname='zipCode'>
+						</div>
+
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Zemlja" formcontrolname='country'>
+						</div>
+
+						<div class="form-group">
+							<textarea class="form-control" placeholder="Poruka" rows="5" formcontrolname='message'></textarea>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-12 col-sm-4">
+				<div class="payment-div">
+					<div class="total-amount">
+						<h3>Način plaćanja</h3>
+
+						<table>
+							<thead>
+								<tr>
+									<th width="50%"></th>
+									<th width="50%"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Isporuka:</td>
+									<td>Free</td>
+								</tr>
+								<tr>
+									<td>Cena:</td>
+									<td>&euro; 250.00</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td>Ukupno:</td>
+									<td>&euro; 250.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+					<div class="method-div">
+						<div class="radio">
+						  <label><input type="radio" name="payment" checked>PayPal</label>
+						</div>
+						<div class="radio">
+						  <label><input type="radio" name="payment">Plaćanje pouzećem</label>
+						</div>
+						<div class="radio">
+						  <label><input type="radio" name="payment">Bankovni prenos</label>
+						</div>
+					</div>
+
+					<div class="text-center">
+						<button form="ngForm" class="send-message-btn">PLATI</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
